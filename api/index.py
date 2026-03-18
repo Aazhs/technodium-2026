@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, Form, HTTPException, Depends
+from fastapi import FastAPI, Request, Form, HTTPException, Depends, APIRouter
 from fastapi.responses import JSONResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 load_dotenv()
 
 app = FastAPI(title="Technodium 2026 API")
+api_router = APIRouter()
 
 # Allow CORS for development
 app.add_middleware(
@@ -171,19 +172,19 @@ class RegistrationRequest(BaseModel):
 
 # ── API Routes ──────────────────────────────────────────────
 
-@app.get("/user")
+@api_router.get("/user")
 async def api_get_user(request: Request):
     user = get_current_user(request)
     if user:
         return {"authenticated": True, "user": user}
     return {"authenticated": False, "user": None}
 
-@app.get("/ps-counts")
+@api_router.get("/ps-counts")
 async def api_ps_counts():
     counts = get_problem_statement_counts()
     return {"counts": counts}
 
-@app.get("/registration")
+@api_router.get("/registration")
 async def api_get_registration(request: Request):
     user = get_current_user(request)
     if not user:
@@ -193,7 +194,7 @@ async def api_get_registration(request: Request):
         return {"registered": True, "registration": reg}
     return {"registered": False, "registration": None}
 
-@app.post("/signup")
+@api_router.post("/signup")
 async def api_signup(req: SignupRequest):
     if req.password != req.confirm_password:
         raise HTTPException(status_code=400, detail="Passwords do not match.")
@@ -220,7 +221,7 @@ async def api_signup(req: SignupRequest):
             msg = "An account with this email already exists."
         raise HTTPException(status_code=400, detail=msg)
 
-@app.post("/login")
+@api_router.post("/login")
 async def api_login(req: LoginRequest):
     if not supabase:
         raise HTTPException(status_code=500, detail="Auth service unavailable.")
@@ -232,7 +233,7 @@ async def api_login(req: LoginRequest):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Invalid email or password.")
 
-@app.post("/logout")
+@api_router.post("/logout")
 async def api_logout(request: Request):
     response = JSONResponse({"success": True, "message": "Logged out."})
     clear_auth_cookies(response)
@@ -244,7 +245,7 @@ async def api_logout(request: Request):
         pass
     return response
 
-@app.post("/forgot-password")
+@api_router.post("/forgot-password")
 async def api_forgot_password(req: ForgotPasswordRequest, request: Request):
     if not supabase:
         raise HTTPException(status_code=500, detail="Auth service unavailable.")
@@ -256,7 +257,7 @@ async def api_forgot_password(req: ForgotPasswordRequest, request: Request):
         pass
     return {"success": True, "message": "If an account with that email exists, you will receive a reset link shortly."}
 
-@app.post("/reset-password")
+@api_router.post("/reset-password")
 async def api_reset_password(req: ResetPasswordRequest):
     if req.password != req.confirm_password:
         raise HTTPException(status_code=400, detail="Passwords do not match.")
@@ -273,7 +274,7 @@ async def api_reset_password(req: ResetPasswordRequest):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Reset link expired or invalid.")
 
-@app.post("/register")
+@api_router.post("/register")
 async def api_submit_registration(req: RegistrationRequest, request: Request):
     user = get_current_user(request)
     if not user:
@@ -324,7 +325,7 @@ async def api_submit_registration(req: RegistrationRequest, request: Request):
         print(f"Registration Error: {e}")
         raise HTTPException(status_code=500, detail=f"Registration failed: {str(e)}")
 
-@app.put("/register")
+@api_router.put("/register")
 async def api_edit_registration(req: RegistrationRequest, request: Request):
     user = get_current_user(request)
     if not user:
@@ -375,6 +376,10 @@ async def api_edit_registration(req: RegistrationRequest, request: Request):
     except Exception as e:
         raise HTTPException(status_code=500, detail="Update failed.")
 
-@app.get("/health")
+@api_router.get("/health")
 async def health_check():
     return {"status": "ok", "supabase_connected": supabase is not None}
+
+
+app.include_router(api_router)
+app.include_router(api_router, prefix="/api")
