@@ -1,0 +1,546 @@
+TimeUTC,timestampInMs,requestPath,requestMethod,requestQueryString,responseStatusCode,requestId,requestUserAgent,level,environment,branch,vercelCache,type,function,host,deploymentDomain,deploymentId,durationMs,region,maxMemoryUsed,memorySize,message,projectId,traceId,sessionId,invocationId,instanceId,concurrency
+2026-03-18 18:07:47,1773857267768,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,wlmzb-1773857267530-1b2d05dfbd8b,vercel-favicon/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:47,1773857267530,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,wlmzb-1773857267530-1b2d05dfbd8b,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,182,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123QVD3CM4DF21MQXQKW58,,-1
+2026-03-18 18:07:47,1773857267562,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.png,GET,,500,548bl-1773857267315-8fb3e50d6b02,vercel-favicon/1.0,error,production,main,MISS,function,/favicon.png,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:47,1773857267315,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.png,GET,,500,548bl-1773857267315-8fb3e50d6b02,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,196,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123QMTP0MKZB9DSYAAJPQN,,-1
+2026-03-18 18:07:46,1773857266474,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,2mdr7-1773857266220-14e6ce477f90,vercel-favicon/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:46,1773857266220,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,2mdr7-1773857266220-14e6ce477f90,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,189,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123PJXH7VBRVVNY2X0290F,,-1
+2026-03-18 18:07:45,1773857265219,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.png,GET,,500,m8gd5-1773857264978-bbf4a425b4aa,vercel-favicon/1.0,error,production,main,MISS,function,/favicon.png,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:44,1773857264978,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.png,GET,,500,m8gd5-1773857264978-bbf4a425b4aa,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,189,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123NBQE7CVXW31F41KM0H2,,-1
+2026-03-18 18:07:43,1773857263888,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.png,GET,,500,5npcq-1773857263641-9526f30dcdde,vercel-favicon/1.0,error,production,main,MISS,function,/favicon.png,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:43,1773857263641,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.png,GET,,500,5npcq-1773857263641-9526f30dcdde,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,183,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123M29ZMCMXWWCW37WGYZJ,,-1
+2026-03-18 18:07:43,1773857263605,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,nptmq-1773857263372-2ca116834f41,vercel-favicon/1.0,error,production,main,MISS,function,/favicon.ico,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:43,1773857263372,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,nptmq-1773857263372-2ca116834f41,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,182,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123KSFN0GGNGG0PRS8KRS9,,-1
+2026-03-18 18:07:41,1773857261258,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,rtnm2-1773857261003-91097bc9b2b4,vercel-favicon/1.0,error,production,main,MISS,function,/favicon.ico,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:41,1773857261003,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,rtnm2-1773857261003-91097bc9b2b4,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,184,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123HFRDCCCRJS82QHVHTZR,,-1
+2026-03-18 18:07:39,1773857259941,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,j25gn-1773857259679-305e3c2b0ac9,vercel-favicon/1.0,error,production,main,MISS,function,/favicon.ico,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:39,1773857259679,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,j25gn-1773857259679-305e3c2b0ac9,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,179,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123G74A27PV8S1NA4GA280,,-1
+2026-03-18 18:07:39,1773857259553,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,92gps-1773857259319-2e73c4fbc777,vercel-favicon/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:39,1773857259319,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,92gps-1773857259319-2e73c4fbc777,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,178,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123FTXVEZ22KY2CSMR1NEZ,,-1
+2026-03-18 18:07:39,1773857259620,technodium-2026.vercel.app/,GET,,500,225l2-1773857259102-2e809f928c1f,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,error,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:39,1773857259102,technodium-2026.vercel.app/,GET,,500,225l2-1773857259102-2e809f928c1f,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,184,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123FWWCDYBMKXAHYC4MB8F,,-1
+2026-03-18 18:07:38,1773857258256,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,8wqpz-1773857258017-9839ced80f04,vercel-favicon/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:38,1773857258017,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,8wqpz-1773857258017-9839ced80f04,vercel-favicon/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,179,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123EJ9S6KHBRRSA57Q3V14,,-1
+2026-03-18 18:07:26,1773857246291,technodium-2026.vercel.app/favicon.ico,GET,,500,jgxln-1773857245998-e8881eae4edd,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,error,production,main,MISS,function,/favicon.ico,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:25,1773857245998,technodium-2026.vercel.app/favicon.ico,GET,,500,jgxln-1773857245998-e8881eae4edd,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,179,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM1232WK8VAX74YBWFZS5PQP,,-1
+2026-03-18 18:07:25,1773857245634,technodium-2026.vercel.app/,GET,,500,vjdtj-1773857245088-d05921cf5c62,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,error,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:25,1773857245088,technodium-2026.vercel.app/,GET,,500,vjdtj-1773857245088-d05921cf5c62,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,178,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM123281QFSSYEYQ79AF7T32,,-1
+2026-03-18 18:07:23,1773857243009,technodium-2026.vercel.app/,GET,,500,zsdq6-1773857242208-72fa865be119,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,error,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:22,1773857242208,technodium-2026.vercel.app/,GET,,500,zsdq6-1773857242208-72fa865be119,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0,,production,main,MISS,function,/,technodium-2026.vercel.app,technodium-2026.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,190,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122ZNHQJSJPG4JDZ5DPGR1,,-1
+2026-03-18 18:07:18,1773857238946,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,dlbwf-1773857238616-41581519cb87,vercel-screenshot/1.0,error,production,main,MISS,function,/favicon.ico,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:18,1773857238616,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,dlbwf-1773857238616-41581519cb87,vercel-screenshot/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,180,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122VPVJA76T3KT02JEW1XP,,-1
+2026-03-18 18:07:18,1773857238587,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,wj2zs-1773857238237-ee99ef573923,vercel-screenshot/1.0,error,production,main,MISS,function,/favicon.ico,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:18,1773857238237,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/favicon.ico,GET,,500,wj2zs-1773857238237-ee99ef573923,vercel-screenshot/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,182,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122VBQ9Y6P3P8V0CQJM5QB,,-1
+2026-03-18 18:07:18,1773857238532,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,wlmzb-1773857238192-943dd07c87a4,vercel-screenshot/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:18,1773857238192,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,wlmzb-1773857238192-943dd07c87a4,vercel-screenshot/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,184,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122V9C84DDH2N23AVA4850,,-1
+2026-03-18 18:07:18,1773857238078,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,sjf2q-1773857237744-573bc590833f,vercel-screenshot/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:17,1773857237744,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,sjf2q-1773857237744-573bc590833f,vercel-screenshot/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,181,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122TVTYF55QFE1ASYCJ6DW,,-1
+2026-03-18 18:07:17,1773857237637,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,pzdcq-1773857237170-d2b2337c5afa,vercel-screenshot/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:17,1773857237170,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,pzdcq-1773857237170-d2b2337c5afa,vercel-screenshot/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,184,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122TDYTMMQ470RFDK25CVE,,-1
+2026-03-18 18:07:18,1773857238076,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,jnxfv-1773857237163-61c4d3af631b,vercel-screenshot/1.0,error,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,,,,,"could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+could not import ""api/index.py"":
+Traceback (most recent call last):
+File ""/var/task/_vendor/vercel_runtime/vc_init.py"", line 461, in <module>
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/vercel_runtime/resolver.py"", line 24, in import_module
+spec.loader.exec_module(mod)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/api/index.py"", line 1, in <module>
+from fastapi import FastAPI
+ModuleNotFoundError: No module named 'fastapi'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.",prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,,,
+2026-03-18 18:07:17,1773857237163,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app/,GET,,500,jnxfv-1773857237163-61c4d3af631b,vercel-screenshot/1.0,,production,main,MISS,function,/,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,technodium-2026-de7uofy3c-aashs-projects-c07d2bf3.vercel.app,dpl_4utFyyvB9YqsisPLBSwjCd9vBSn5,191,iad1,-1,2048,,prj_8mscdCrEipemHmBw8M2FoYgg6Gb5,,,01KM122TDQTJW6EZ102R71ESWM,,-1
