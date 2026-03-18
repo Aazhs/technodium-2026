@@ -4,8 +4,8 @@
   "buildCommand": "npm --prefix frontend run build",
   "outputDirectory": "frontend/dist",
   "functions": {
-    "api/*.py": {
-      "runtime": "vercel-python@0.1.1"
+    "api/index.py": {
+      "runtime": "@vercel/python"
     }
   },
   "rewrites": [
