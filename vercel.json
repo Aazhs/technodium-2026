@@ -3,11 +3,6 @@
   "installCommand": "npm --prefix frontend install --production=false",
   "buildCommand": "npm --prefix frontend run build",
   "outputDirectory": "frontend/dist",
-  "functions": {
-    "api/index.py": {
-      "runtime": "@vercel/python@6.24.0"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
