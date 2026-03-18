@@ -15,6 +15,8 @@
     --border:   #111111; /* Sharp dark borders */
     --text:     #111111; 
     --text-dim: #555555; 
+    --shadow-ink: #2c241ed0;
+    --hero-backdrop: #2c241e;
     
     /* Vibrant, non-generic colors */
     --accent:   #4338ca; /* Indigo */
@@ -28,10 +30,10 @@
     --sans:     'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     
     /* Brutalist / Hard Shadows */
-    --shadow-hard: 6px 6px 0px var(--border);
-    --shadow-hard-lg: 12px 12px 0px var(--border);
-    --shadow-hard-sm: 4px 4px 0px var(--border);
-    --shadow-pressed: 0px 0px 0px var(--border);
+    --shadow-hard: 6px 6px 0px var(--shadow-ink);
+    --shadow-hard-lg: 12px 12px 0px var(--shadow-ink);
+    --shadow-hard-sm: 4px 4px 0px var(--shadow-ink);
+    --shadow-pressed: 0px 0px 0px var(--shadow-ink);
 }
 
 html {
@@ -210,7 +212,7 @@ a:hover {
     padding: 8px 16px;
     cursor: pointer;
     text-transform: uppercase;
-    box-shadow: 4px 4px 0px var(--border);
+    box-shadow: 4px 4px 0px var(--shadow-ink);
     transition: all 0.15s;
 }
 
@@ -218,7 +220,7 @@ a:hover {
     background: var(--text);
     color: var(--pink);
     transform: translate(4px, 4px);
-    box-shadow: 0px 0px 0px var(--border);
+    box-shadow: 0px 0px 0px var(--shadow-ink);
 }
 
 .nav-cta {
@@ -236,7 +238,7 @@ a:hover {
 
 .nav-cta:hover {
     transform: translate(3px, 3px) skew(-3deg) !important;
-    box-shadow: 0px 0px 0px var(--border) !important;
+    box-shadow: 0px 0px 0px var(--shadow-ink) !important;
     background: var(--orange) !important;
     color: white !important;
 }
@@ -250,7 +252,7 @@ a:hover {
     flex-direction: column;
     gap: 6px;
     background: var(--surface);
-    box-shadow: 4px 4px 0px var(--border);
+    box-shadow: 4px 4px 0px var(--shadow-ink);
 }
 
 .nav-toggle span {
@@ -321,15 +323,15 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 0px var(--border);
-    background-image: radial-gradient(rgba(17, 17, 17, 0.28) 1.2px, transparent 1.2px);
+    box-shadow: 10px 10px 0px var(--shadow-ink);
+    background-image: radial-gradient(rgba(44, 36, 30, 0.2) 1.2px, transparent 1.2px);
     background-size: 24px 24px;
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .hero-stat-item:hover {
     transform: translate(-6px, -6px) rotate(3deg);
-    box-shadow: 16px 16px 0px var(--accent);
+    box-shadow: 16px 16px 0px var(--shadow-ink);
     background: var(--yellow);
 }
 
@@ -372,7 +374,7 @@ a:hover {
 .shape-3 {
     top: 12%; right: 12%;
     width: 140px; height: 140px;
-    background: var(--border); 
+    background: var(--hero-backdrop); 
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     animation: rotate-shape 20s linear infinite reverse;
 }
@@ -410,7 +412,7 @@ a:hover {
     background: var(--surface);
     border: 4px solid var(--border);
     padding: 70px;
-    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.95);
+    box-shadow: 20px 20px 0px var(--shadow-ink);
     text-align: left;
     background-image: radial-gradient(var(--border) 1.5px, transparent 1.5px);
     background-size: 30px 30px;
@@ -419,7 +421,7 @@ a:hover {
 
 .hero-overlay:hover {
     transform: translate(-6px, -6px);
-    box-shadow: 26px 26px 0px rgba(62, 39, 39, 0.98);
+    box-shadow: 26px 26px 0px var(--shadow-ink);
 }
 
 .hero-overlay h1 {
@@ -451,7 +453,7 @@ a:hover {
     background: var(--yellow);
     padding: 20px 30px;
     border: 3px solid var(--border);
-    box-shadow: 8px 8px 0px var(--border);
+    box-shadow: 8px 8px 0px var(--shadow-ink);
     display: inline-block;
 }
 
@@ -476,7 +478,7 @@ a:hover {
     background: var(--surface);
     border: 3px solid var(--border);
     padding: 12px 30px;
-    box-shadow: 8px 8px 0px var(--border);
+    box-shadow: 8px 8px 0px var(--shadow-ink);
     font-family: var(--mono);
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -516,7 +518,7 @@ a:hover {
     text-align: center;
     background: var(--surface);
     color: var(--text);
-    box-shadow: 10px 10px 0px var(--border);
+    box-shadow: 10px 10px 0px var(--shadow-ink);
     position: relative;
     overflow: hidden;
 }
@@ -530,7 +532,7 @@ a:hover {
     background: var(--surface);
     color: var(--accent);
     transform: translate(10px, 10px) skew(-4deg);
-    box-shadow: 0px 0px 0px var(--border);
+    box-shadow: 0px 0px 0px var(--shadow-ink);
 }
 
 .btn-ghost {
@@ -542,7 +544,7 @@ a:hover {
     background: var(--orange);
     color: white;
     transform: translate(10px, 10px) skew(4deg);
-    box-shadow: 0px 0px 0px var(--border);
+    box-shadow: 0px 0px 0px var(--shadow-ink);
 }
 
 /* ── SECTIONS ───────────────────────────────────────────── */
@@ -574,14 +576,14 @@ a:hover {
     background: var(--yellow);
     padding: 20px 50px;
     border: 4px solid var(--border);
-    box-shadow: 12px 12px 0px var(--border);
+    box-shadow: 12px 12px 0px var(--shadow-ink);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .section-title:hover {
     transform: rotate(-3deg) skew(6deg) scale(1.15);
     background: var(--pink);
     color: white;
-    box-shadow: 18px 18px 0px var(--border);
+    box-shadow: 18px 18px 0px var(--shadow-ink);
 }
 
 /* ── TIMELINE ───────────────────────────────────────────── */
@@ -639,7 +641,7 @@ a:hover {
     display: inline-block;
     margin-bottom: 30px;
     text-transform: uppercase;
-    box-shadow: 6px 6px 0px var(--accent);
+    box-shadow: 6px 6px 0px var(--shadow-ink);
 }
 
 .tl-content h3 {
@@ -670,7 +672,7 @@ a:hover {
     background: var(--surface);
     border: 4px solid var(--border);
     padding: 56px 36px;
-    box-shadow: 12px 12px 0px var(--border);
+    box-shadow: 12px 12px 0px var(--shadow-ink);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
@@ -685,7 +687,7 @@ a:hover {
 
 .round-card:hover {
     transform: translate(-5px, -5px) rotate(-1deg) scale(1.01);
-    box-shadow: 14px 14px 0px var(--accent);
+    box-shadow: 14px 14px 0px var(--shadow-ink);
     background: var(--yellow);
 }
 
@@ -716,12 +718,12 @@ a:hover {
     background: var(--surface);
     border: 4px solid var(--border);
     padding: 48px;
-    box-shadow: 14px 14px 0px var(--border);
+    box-shadow: 14px 14px 0px var(--shadow-ink);
     transition: all 0.3s ease;
 }
 .ps-card:hover {
     transform: translate(-5px, -5px);
-    box-shadow: 16px 16px 0px var(--orange);
+    box-shadow: 16px 16px 0px var(--shadow-ink);
     border-color: var(--orange);
 }
 
@@ -730,14 +732,14 @@ a:hover {
     background: var(--surface);
     border: 4px solid var(--border);
     padding: 70px 50px;
-    box-shadow: 16px 16px 0px var(--border);
+    box-shadow: 16px 16px 0px var(--shadow-ink);
     position: relative;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .winner-card:hover {
     transform: translate(-6px, -6px) rotate(1deg);
-    box-shadow: 20px 20px 0px var(--border);
+    box-shadow: 20px 20px 0px var(--shadow-ink);
 }
 
 .winner-perks li:hover {
@@ -756,7 +758,7 @@ a:hover {
 .step-card {
     background: var(--surface);
     border: 3px solid var(--border);
-    box-shadow: 10px 10px 0 var(--border);
+    box-shadow: 10px 10px 0 var(--shadow-ink);
     padding: 26px;
     transition: all 0.28s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -770,7 +772,7 @@ a:hover {
     margin-bottom: 12px;
     border: 2px solid var(--border);
     background: var(--yellow);
-    box-shadow: 4px 4px 0 var(--border);
+    box-shadow: 4px 4px 0 var(--shadow-ink);
     font-family: var(--mono);
     font-size: 1rem;
     font-weight: 900;
@@ -794,7 +796,7 @@ a:hover {
 .step-card:hover {
     transform: translate(-4px, -4px) rotate(-0.2deg);
     background: var(--yellow);
-    box-shadow: 14px 14px 0px var(--pink);
+    box-shadow: 14px 14px 0px var(--shadow-ink);
 }
 
 .step-card:hover .step-num {
@@ -882,7 +884,7 @@ a:hover {
     margin: 0 auto;
     background: var(--surface);
     border: 3px solid var(--border);
-    box-shadow: 12px 12px 0 var(--border);
+    box-shadow: 12px 12px 0 var(--shadow-ink);
     padding: 32px;
 }
 
@@ -923,7 +925,7 @@ a:hover {
     padding: 8px 14px;
     border: 2px solid var(--border);
     background: var(--yellow);
-    box-shadow: 4px 4px 0 var(--border);
+    box-shadow: 4px 4px 0 var(--shadow-ink);
     font-family: var(--mono);
     font-size: 0.86rem;
     font-weight: 800;
@@ -1032,7 +1034,7 @@ a:hover {
     margin: 0 auto;
     background: var(--surface);
     border: 3px solid var(--border);
-    box-shadow: 14px 14px 0 var(--border);
+    box-shadow: 14px 14px 0 var(--shadow-ink);
     padding: 30px;
 }
 
@@ -1059,7 +1061,7 @@ a:hover {
 .dash-card {
     background: var(--surface);
     border: 3px solid var(--border);
-    box-shadow: 10px 10px 0 var(--border);
+    box-shadow: 10px 10px 0 var(--shadow-ink);
     padding: 24px;
     color: var(--text);
 }
@@ -1303,7 +1305,7 @@ a:hover {
     border: 3px solid var(--border);
     padding: 20px;
     background: #ecfeff;
-    box-shadow: 8px 8px 0 var(--border);
+    box-shadow: 8px 8px 0 var(--shadow-ink);
 }
 
 .participation-prize h4 {
@@ -1469,7 +1471,7 @@ a:hover {
     font-size: 0.86rem;
     padding: 7px 12px;
     margin-bottom: 12px;
-    box-shadow: 4px 4px 0px var(--accent);
+    box-shadow: 4px 4px 0px var(--shadow-ink);
 }
 
 .tl-content h3 {
