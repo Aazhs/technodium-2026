@@ -20,8 +20,6 @@ export default function Footer() {
           <div className="footer-credits">
             <span>Built by</span>
             <a href="https://github.com/Aazhs/" target="_blank" rel="noreferrer">Aarsh</a>
-            <span>&amp;</span>
-            <a href="https://github.com/Smazhh" target="_blank" rel="noreferrer">Samarth</a>
           </div>
         </div>
       </div>
