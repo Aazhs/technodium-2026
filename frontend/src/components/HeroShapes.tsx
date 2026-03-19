@@ -63,7 +63,7 @@ const HERO_SHAPES: ShapeDefinition[] = [
   {
     id: 'sun',
     className: 'hero-shape--orb',
-    size: 260,
+    size: 292,
     seedX: 0.06,
     seedY: 0.2,
     velocityX: 42,
@@ -75,7 +75,7 @@ const HERO_SHAPES: ShapeDefinition[] = [
   {
     id: 'slab',
     className: 'hero-shape--slab',
-    size: 220,
+    size: 244,
     seedX: 0.88,
     seedY: 0.14,
     velocityX: -34,
@@ -99,7 +99,7 @@ const HERO_SHAPES: ShapeDefinition[] = [
   {
     id: 'diamond',
     className: 'hero-shape--diamond',
-    size: 180,
+    size: 202,
     seedX: 0.8,
     seedY: 0.58,
     velocityX: -40,
@@ -123,7 +123,7 @@ const HERO_SHAPES: ShapeDefinition[] = [
   {
     id: 'ring',
     className: 'hero-shape--ring',
-    size: 192,
+    size: 214,
     seedX: 0.24,
     seedY: 0.8,
     velocityX: 24,
@@ -147,7 +147,7 @@ const HERO_SHAPES: ShapeDefinition[] = [
   {
     id: 'badge',
     className: 'hero-shape--badge',
-    size: 134,
+    size: 148,
     seedX: 0.58,
     seedY: 0.72,
     velocityX: -20,
