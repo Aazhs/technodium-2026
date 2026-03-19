@@ -6,8 +6,6 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import EditRegistration from './pages/EditRegistration';
-import ForgotPassword from './pages/ForgotPassword';
-import ResetPassword from './pages/ResetPassword';
 import CustomCursor from './components/CustomCursor';
 import { getUser } from './api';
 
@@ -42,8 +40,6 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard user={user} />} />
         <Route path="/register" element={<Register user={user} />} />
         <Route path="/edit-registration" element={<EditRegistration user={user} />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

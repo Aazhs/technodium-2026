@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import HeroShapes from '../components/HeroShapes';
 import { signup } from '../api';
 
 export default function Signup({ user }: { user: any }) {
@@ -44,54 +45,57 @@ export default function Signup({ user }: { user: any }) {
   return (
     <div className="page-wrap" style={{ position: 'relative', overflow: 'hidden' }}>
       <Nav user={user} />
-      
-      {/* Decorative Shapes */}
-      <div className="shape shape-1" style={{ top: '100px', right: '-80px', width: '250px', height: '250px', opacity: 0.5 }}></div>
-      <div className="shape shape-4" style={{ bottom: '50px', left: '-40px', width: '180px', height: '180px', opacity: 0.5 }}></div>
-
-      <section className="form-section" style={{ position: 'relative', zIndex: 2 }}>
-        <div className="form-container auth-container">
-          <div className="auth-header">
-            <h2>Join the Movement</h2>
-            <p className="form-subtitle">Create your Technodium 2026 account.</p>
-          </div>
-          {error && <div className="alert alert-error">{error}</div>}
-          {successMsg && (
-            <div className="alert alert-success">
-              <h4 style={{ marginBottom: '8px' }}>Success!</h4>
-              {successMsg}
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
+        <HeroShapes />
+        <section className="form-section" style={{ position: 'relative', zIndex: 2 }}>
+          <div className="form-container auth-container">
+            <div className="auth-header">
+              <h2>Join the Movement</h2>
+              <p className="form-subtitle">Create your Technodium 2026 account.</p>
             </div>
-          )}
-          {!successMsg && (
-            <form onSubmit={handleSubmit} className="auth-form">
-              <div className="form-group">
-                <label>Full Name</label>
-                <input type="text" required value={formData.full_name} onChange={e => setFormData({ ...formData, full_name: e.target.value })} placeholder="John Doe" />
+            {error && <div className="alert alert-error">{error}</div>}
+            {successMsg && (
+              <div className="alert alert-success">
+                <h4 style={{ marginBottom: '8px' }}>Success!</h4>
+                {successMsg}
               </div>
-              <div className="form-group">
-                <label>Email Address</label>
-                <input type="email" required value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} placeholder="john@example.com" />
-              </div>
-              <div className="form-group">
-                <label>Password</label>
-                <input type="password" required value={formData.password} onChange={e => setFormData({ ...formData, password: e.target.value })} placeholder="••••••••" />
-                <p className="password-hint" style={{ marginTop: '8px', fontSize: '0.75rem', color: 'var(--text-dim)' }}>
-                  Include 8+ chars, 1 uppercase, 1 number & 1 special character.
-                </p>
-              </div>
-              <div className="form-group">
-                <label>Confirm Password</label>
-                <input type="password" required value={formData.confirm_password} onChange={e => setFormData({ ...formData, confirm_password: e.target.value })} placeholder="••••••••" />
-              </div>
-              <button type="submit" className="btn btn-primary btn-full magic-hover magic-hover__square">Create My Account</button>
-            </form>
-          )}
-          <div className="auth-footer">
-            <p>Already a member? <Link to="/login" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Sign in here</Link></p>
+            )}
+            {!successMsg && (
+              <form onSubmit={handleSubmit} className="auth-form">
+                <div className="form-group">
+                  <label>Full Name</label>
+                  <input type="text" required value={formData.full_name} onChange={e => setFormData({ ...formData, full_name: e.target.value })} placeholder="John Doe" />
+                </div>
+                <div className="form-group">
+                  <label>Email Address</label>
+                  <input type="email" required value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} placeholder="john@example.com" />
+                </div>
+                <div className="form-group">
+                  <label>Password</label>
+                  <input type="password" required value={formData.password} onChange={e => setFormData({ ...formData, password: e.target.value })} placeholder="••••••••" />
+                  <p className="password-hint" style={{ marginTop: '8px', fontSize: '0.75rem', color: 'var(--text-dim)' }}>
+                    Include 8+ chars, 1 uppercase, 1 number & 1 special character.
+                  </p>
+                  <p className="password-hint" style={{ marginTop: '6px', fontSize: '0.75rem', color: 'var(--text-dim)' }}>
+                    Please do not forget this password.
+                  </p>
+                </div>
+                <div className="form-group">
+                  <label>Confirm Password</label>
+                  <input type="password" required value={formData.confirm_password} onChange={e => setFormData({ ...formData, confirm_password: e.target.value })} placeholder="••••••••" />
+                </div>
+                <button type="submit" className="btn btn-primary btn-full magic-hover magic-hover__square">Create My Account</button>
+              </form>
+            )}
+            <div className="auth-footer">
+              <p>Already a member? <Link to="/login" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Sign in here</Link></p>
+            </div>
           </div>
+        </section>
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <Footer />
         </div>
-      </section>
-      <Footer />
+      </div>
     </div>
   );
 }

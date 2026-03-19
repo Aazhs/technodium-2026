@@ -143,15 +143,6 @@ class LoginRequest(BaseModel):
     email: EmailStr
     password: str
 
-class ForgotPasswordRequest(BaseModel):
-    email: EmailStr
-
-class ResetPasswordRequest(BaseModel):
-    access_token: str
-    refresh_token: str = ""
-    password: str
-    confirm_password: str
-
 class RegistrationRequest(BaseModel):
     team_name: str
     university: str
@@ -244,35 +235,6 @@ async def api_logout(request: Request):
     except Exception:
         pass
     return response
-
-@api_router.post("/forgot-password")
-async def api_forgot_password(req: ForgotPasswordRequest, request: Request):
-    if not supabase:
-        raise HTTPException(status_code=500, detail="Auth service unavailable.")
-    try:
-        origin = request.headers.get("origin") or str(request.base_url).rstrip("/")
-        redirect_url = f"{origin}/reset-password"
-        supabase.auth.reset_password_email(req.email, {"redirect_to": redirect_url})
-    except Exception as e:
-        pass
-    return {"success": True, "message": "If an account with that email exists, you will receive a reset link shortly."}
-
-@api_router.post("/reset-password")
-async def api_reset_password(req: ResetPasswordRequest):
-    if req.password != req.confirm_password:
-        raise HTTPException(status_code=400, detail="Passwords do not match.")
-    password_pattern = r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>]).{8,}$"
-    if not re.match(password_pattern, req.password):
-        raise HTTPException(status_code=400, detail="Password does not meet requirements.")
-    if not supabase:
-        raise HTTPException(status_code=500, detail="Auth service unavailable.")
-    try:
-        supabase.auth.set_session(req.access_token, req.refresh_token)
-        supabase.auth.update_user({"password": req.password})
-        supabase.auth.sign_out()
-        return {"success": True, "message": "Password updated successfully!"}
-    except Exception as e:
-        raise HTTPException(status_code=400, detail="Reset link expired or invalid.")
 
 @api_router.post("/register")
 async def api_submit_registration(req: RegistrationRequest, request: Request):

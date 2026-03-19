@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import HeroShapes from '../components/HeroShapes';
 import { problemStatements } from '../data/psData';
 import { getPSCounts } from '../api';
 
@@ -85,11 +86,7 @@ export default function Landing({ user }: { user: any }) {
 
       {/* ── HERO ──────────────────────────────────── */}
       <section className="hero" id="hero">
-        <div className="shape shape-1"></div>
-        <div className="shape shape-2"></div>
-        <div className="shape shape-3"></div>
-        <div className="shape shape-4"></div>
-        <div className="shape shape-5"></div>
+        <HeroShapes />
         
         <div className="hero-container">
           <div className="hero-content">
