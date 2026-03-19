@@ -102,7 +102,7 @@ export default function Register({ user }: { user: any }) {
                       </div>
                       <div className="form-group">
                         <label>Institution / University</label>
-                        <input type="text" name="university" required value={formData.university} onChange={handleInputChange} placeholder="ASSCET Engineering College" />
+                        <input type="text" name="university" required value={formData.university} onChange={handleInputChange} placeholder="College name" />
                       </div>
                       <div className="form-group">
                         <label>Squad Size</label>
