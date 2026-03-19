@@ -1257,17 +1257,68 @@ a:hover {
 .dash-container {
     max-width: 1180px;
     margin: 0 auto;
-    background: var(--surface);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 250, 248, 0.98));
     border: 3px solid var(--border);
     box-shadow: 14px 14px 0 var(--shadow-ink);
     padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dash-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(17, 17, 17, 0.035) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.dash-section {
+    padding-top: 44px;
+}
+
+.dash-hero,
+.dash-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.dash-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.dash-header,
+.dash-account-card {
+    border: 3px solid var(--border);
+    box-shadow: 10px 10px 0 var(--shadow-ink);
+    padding: 24px;
+}
+
+.dash-header {
+    background: linear-gradient(135deg, #ffffff 0%, #fef3c7 100%);
+}
+
+.dash-header p,
+.dash-account-card p {
+    color: var(--text-dim);
+    max-width: 64ch;
+}
+
+.dash-account-card {
+    background: linear-gradient(135deg, #eef2ff 0%, #ffffff 100%);
+    align-content: start;
 }
 
 .dash-header h2 {
     font-family: var(--title-font);
     text-transform: uppercase;
     font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: 4px;
+    margin: 12px 0 8px;
 }
 
 .dash-email {
@@ -1276,11 +1327,19 @@ a:hover {
     color: var(--accent);
 }
 
-.dash-actions {
-    margin-top: 24px;
+.dash-account-card h3 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: clamp(1.45rem, 2vw, 2rem);
+    margin: 14px 0 8px;
+    overflow-wrap: anywhere;
+}
+
+.dash-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
+    align-items: start;
 }
 
 .dash-card {
@@ -1289,12 +1348,254 @@ a:hover {
     box-shadow: 10px 10px 0 var(--shadow-ink);
     padding: 24px;
     color: var(--text);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    gap: 18px;
 }
 
 .dash-card h3 {
     font-family: var(--title-font);
     text-transform: uppercase;
     font-size: clamp(1.4rem, 2.2vw, 2rem);
+}
+
+.dash-card--overview,
+.dash-card--roster {
+    grid-column: 1 / -1;
+}
+
+.dash-card--overview {
+    background: linear-gradient(135deg, #ffffff 0%, #ecfdf5 100%);
+}
+
+.dash-card--actions {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%);
+    align-content: start;
+    grid-column: 1 / -1;
+}
+
+.dash-card--empty {
+    background: linear-gradient(135deg, #fde047 0%, #fff7ed 100%);
+}
+
+.dash-loading-state {
+    position: relative;
+    z-index: 1;
+}
+
+.dash-card-head,
+.dash-section-head,
+.dash-member-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.dash-card-head h3 {
+    margin-top: 14px;
+}
+
+.dash-status-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border: 2px solid var(--border);
+    background: #dcfce7;
+    box-shadow: 4px 4px 0 var(--shadow-ink);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.dash-lead {
+    font-size: 1.05rem;
+    color: var(--text);
+}
+
+.dash-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.dash-metric {
+    border: 2px solid var(--border);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 14px;
+    min-height: 96px;
+    display: grid;
+    align-content: start;
+    gap: 8px;
+}
+
+.dash-metric-label,
+.dash-section-head p,
+.dash-member-role,
+.dash-note-kicker,
+.dash-member-meta span {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.dash-metric strong {
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.dash-section-head h3 {
+    margin-top: 12px;
+}
+
+.dash-section-head p {
+    color: var(--text-dim);
+    align-self: center;
+}
+
+.dash-roster-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.dash-member-card {
+    border: 3px solid var(--border);
+    padding: 18px;
+    box-shadow: 6px 6px 0 var(--shadow-ink);
+    display: grid;
+    gap: 14px;
+}
+
+.dash-member-card.is-lead {
+    background: #ecfdf5;
+}
+
+.dash-member-card.is-member-two {
+    background: #eef2ff;
+}
+
+.dash-member-card.is-member-three {
+    background: #fff1f2;
+}
+
+.dash-member-card.is-member-four {
+    background: #fff7ed;
+}
+
+.dash-member-dot {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--border);
+    background: var(--yellow);
+    box-shadow: 3px 3px 0 rgba(44, 36, 30, 0.35);
+    flex: 0 0 auto;
+}
+
+.dash-member-card.is-lead .dash-member-dot {
+    background: var(--green);
+}
+
+.dash-member-card.is-member-two .dash-member-dot {
+    background: var(--accent);
+}
+
+.dash-member-card.is-member-three .dash-member-dot {
+    background: var(--pink);
+}
+
+.dash-member-card.is-member-four .dash-member-dot {
+    background: var(--orange);
+}
+
+.dash-member-card h4 {
+    font-size: 1.4rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.dash-member-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.dash-member-meta div {
+    display: grid;
+    gap: 4px;
+}
+
+.dash-member-meta a {
+    color: var(--text);
+    font-size: 0.98rem;
+    overflow-wrap: anywhere;
+}
+
+.dash-member-value {
+    color: var(--text);
+    font-size: 0.98rem;
+    overflow-wrap: anywhere;
+}
+
+.dash-member-meta a:hover {
+    color: var(--accent);
+}
+
+.dash-deliverable,
+.dash-note-item {
+    border: 2px solid var(--border);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 14px;
+}
+
+.dash-note-list {
+    display: grid;
+    gap: 12px;
+}
+
+.dash-note-item {
+    display: grid;
+    gap: 8px;
+}
+
+.dash-note-item p {
+    color: var(--text-dim);
+}
+
+.dash-empty-points {
+    display: grid;
+    gap: 12px;
+}
+
+.dash-empty-point {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+    border: 2px solid var(--border);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 14px;
+}
+
+.dash-empty-point strong {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1;
+    border: 2px solid var(--border);
+    background: var(--surface);
+    font-family: var(--mono);
+}
+
+.dash-tag-accent {
+    background: var(--accent);
 }
 
 .details-grid {
@@ -1816,12 +2117,26 @@ a:hover {
         padding: 0 20px;
     }
 
+    .dash-hero,
+    .dash-grid,
     .form-row--3,
-    .dash-actions,
     .details-grid,
     .steps-grid,
     .winners-grid {
         grid-template-columns: 1fr;
+    }
+
+    .dash-metrics,
+    .dash-roster-grid,
+    .dash-member-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-card--overview,
+    .dash-card--roster,
+    .dash-card--actions,
+    .dash-card--empty {
+        grid-column: auto;
     }
 
     .footer-contact {
@@ -1854,6 +2169,13 @@ a:hover {
     .form-container,
     .dash-container {
         padding: 20px;
+    }
+
+    .dash-card-head,
+    .dash-section-head,
+    .dash-member-top {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -2063,6 +2385,12 @@ a:hover {
         box-shadow: 8px 8px 0px var(--shadow-ink);
     }
 
+    .dash-header,
+    .dash-account-card,
+    .dash-card {
+        box-shadow: 8px 8px 0px var(--shadow-ink);
+    }
+
     .footer {
         padding: 20px 16px 24px;
     }
@@ -2152,6 +2480,10 @@ a:hover {
 
     .dash-card h3 {
         font-size: clamp(1.25rem, 7vw, 1.8rem);
+    }
+
+    .dash-empty-point {
+        grid-template-columns: 34px minmax(0, 1fr);
     }
 
     .footer-bottom,
