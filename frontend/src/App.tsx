@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import EditRegistration from './pages/EditRegistration';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import CustomCursor from './components/CustomCursor';
 import { getUser } from './api';
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
 
   return (
     <Router>
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
         <Route path="/login" element={<Login user={user} />} />

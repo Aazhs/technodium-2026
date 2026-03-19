@@ -314,7 +314,7 @@ export default function Landing({ user }: { user: any }) {
           <div className="ps-grid">
             {visibleCards.map((ps) => (
               <div className="ps-card ps-card--visible" key={ps.id}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div className="ps-card-head">
                   <span className="ps-id">{ps.id}</span>
                   <span className="ps-count">{psCounts[ps.id] || 0}/10 Teams</span>
                 </div>

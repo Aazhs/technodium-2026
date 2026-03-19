@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="footer-contact">
             <span className="footer-contact-title">Contact Us</span>
             <a href="mailto:contact@asscet.club">contact@asscet.club</a>
-            <a href="tel:+919561236804">+91 95612 36804</a>
+            <a href="tel:+919561236804">+91 67676 67676</a>
           </div>
         </div>
         <div className="footer-bottom">
