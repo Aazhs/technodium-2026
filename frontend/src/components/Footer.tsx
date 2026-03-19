@@ -18,8 +18,10 @@ export default function Footer() {
         <div className="footer-bottom">
           <span>&copy; 2026 Technodium. All rights reserved.</span>
           <div className="footer-credits">
-            <span>Built by</span>
-            <a href="https://github.com/Aazhs/" target="_blank" rel="noreferrer">Aarsh</a>
+            <a href="/#details-footer" className="footer-meta-link">Info</a>
+            <span className="footer-meta-divider" aria-hidden="true">/</span>
+            <span>Website Built by</span>
+            <a href="https://github.com/Aazhs/" target="_blank" rel="noreferrer" className="footer-signature">Aarsh</a>
           </div>
         </div>
       </div>

@@ -372,7 +372,7 @@ export default function Landing({ user }: { user: any }) {
       </section>
 
       {/* ── DETAILS & RULES ──────────────────────────────── */}
-      <section className="section" id="details">
+      <section className="section" id="details" style={{ borderBottom: 'none' }}>
         <div className="section-inner">
           <h2 className="section-title">Hackathon Information</h2>
           <div className="details-grid">
@@ -406,6 +406,7 @@ export default function Landing({ user }: { user: any }) {
               </ul>
             </div>
           </div>
+          <div id="details-footer" className="footer-jump-anchor" aria-hidden="true"></div>
         </div>
       </section>
 
