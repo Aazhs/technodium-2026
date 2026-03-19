@@ -20,8 +20,7 @@ export default function Footer() {
           <div className="footer-credits">
             <a href="/#details-footer" className="footer-meta-link">Info</a>
             <span className="footer-meta-divider" aria-hidden="true">/</span>
-            <span>Website Built by</span>
-            <a href="https://github.com/Aazhs/" target="_blank" rel="noreferrer" className="footer-signature">Aarsh</a>
+            <a href="https://github.com/Aazhs/" target="_blank" rel="noreferrer" className="footer-signature">Website Built by Aarsh</a>
           </div>
         </div>
       </div>
